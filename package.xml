@@ -1,0 +1,31 @@
+<package>
+    <name>bfl</name>
+    <version>0.1.1</version>
+    <description>
+
+        This package contains a recent version of the Bayesian Filtering
+        Library (BFL), distributed by the Orocos Project.  For stability
+        reasons, this package is currently locked to revision 31655 (April
+        19, 2010), but this revision will be updated on a regular basis to
+        the latest available BFL trunk.  This ROS package does not modify
+        BFL in any way, it simply provides a convenient way to download and
+        compile the library, because BFL is not available from an OS package
+        manager.  This ROS package compiles BFL with the Boost library for
+        matrix operations and random number generation.
+
+    </description>
+    <author> Klaas Gadeyne, Wim Meeussen, Tinne Delaet and many others. See web page for a full contributor list. ROS package maintained by Wim Meeussen.</author>
+    <maintainer email="contradict@gmail.com">contradict</maintainer>
+    <license>LGPL</license>
+    <url>https://github.com/contradict/ros-bfl/</url>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <run_depend>roscpp</run_depend>
+
+    <export>
+        <rosdoc external="http://people.mech.kuleuven.be/~tdelaet/bfl_doc/doc/html/index.html" />
+    </export>
+
+</package>
+

@@ -1,0 +1,1 @@
+list(APPEND bfl_INCLUDE_DIRS @PROJECT_SPACE_DIR@/include/bfl)
