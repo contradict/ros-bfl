@@ -28,6 +28,10 @@ ExternalProject_Add(
         -DCMAKE_BUILD_TYPE="Release"
 )
 
+#add_library(orocos-bfl SHARED IMPORTED GLOBAL
+#    IMPORTED_LOCATION ${CATKIN_DEVEL_PREFIX}/lib/liborocos-bfl.so)
+add_library(orocos-bfl src/dummy.c)
+
 install(FILES ${CATKIN_DEVEL_PREFIX}/lib/liborocos-bfl.so
     DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION})
 
